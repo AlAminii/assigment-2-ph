@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    max-width: 1350px;
+    margin: 0 auto;
+
+}
+
+.header-section, .habits,  .run-container, footer {
+    max-width: 90%;
+    margin: 0 auto;
+}
+main{
+   background-color: #000000;
+}
+header {
+    background: linear-gradient(180deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+}
+
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-item {
+    display: flex;
+    list-style: none;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.navs {
+    margin-right: 20px;
+}
+
+.n1 {
+    color: rgb(230, 83, 60);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.nav-item-1 {
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    padding: 8px 20px;
+    color: rgb(255, 255, 255);
+}
+
+.nav-item-2, .nav-item-3, .nav-item-4 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+/* Burger styling */
+.burger {
+    display: none;
+    
+}
+
+.burger i {
+    font-size: 24px;
+    color: white;
+}
+
+/* Mobile responsiveness */
+
+/* 
+banner section heare */
+
+.banner-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid red;
+
+}
+/* .banner-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+.banner-section, .banner-btn{
+    display: flex;
+}
+
+.banner-btn{
+    align-items: center;
+    gap: 20px;
+    
+}
+.banner-tt{
+    font-weight:900;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+}
+.banner-heading, .banner-img{
+    width: 45%;
+    border: 2px solid green;
+    
+}
+
+.btn-primary{
+
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+background: rgb(230, 83, 60);
+color: rgb(255, 255, 255);
+}
+.btn-1{
+color: rgb(255, 255, 255);
+font-size: 1rem;
+font-weight: 600;
+text-align: center;
+}
+
+.banner-tt .ita{
+    font-style: italic;
+
+}
+
+.btn-2{
+    padding: 16px 40px 16px 40px;
+    border: 1px solid rgb(255, 255, 255);
+border-radius: 42px;
+box-sizing: border-box;
+color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 1rem;
+font-weight: 600;
+
+
+}
+
+.banner-sub-title{
+  
+color: rgba(255, 255, 255, 0.5);
+font-size: 1rem;
+font-weight: 400;
+}
+
+.banner-img img{
+    width: 100%;
+    height: auto;
+}
+
+.banner-img img{
+    margin-left: 25px;
+    position: relative;
+}
+
+
+
+.three {
+    width: 150px; 
+    height: 70px; 
+    padding: 15px 30px; 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    position: absolute;
+    top: 100%;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    display: flex;
+    gap: 15px; 
+    align-items: center;
+}
+
+.three.second-card {
+    width: 100px; 
+    height: 70px; 
+    top:46%; /* Adjust the vertical position of the second card */
+    right: 12px; /* Position it horizontally relative to the first card */
+}
+
+.three h1 {
+    width: 30px; 
+    height: 30px; 
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+}
+
+.sm-title {
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: rgb(250, 250, 249);
+}
+
+.sm-sub-title {
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+
+/* habits section */
+.title{
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.sub-title{
+    color: rgba(255, 255, 255, 0.5);
+font-size: 1rem;
+font-weight: 400;
+
+}
+
+
+/* .habits{
+    background: rgb(185, 185, 185);
+} */
+
+.habits-team-section{
+    border: 2px solid aqua;
+    margin-top: 50px;
+    
+
+}
+
+.habits-heading{
+    width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.team-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Vertically center the content */
+    align-items: center;      /* Horizontally center the content */
+    text-align: center;       /* Center the text */
+    margin: 0 auto;
+    min-height: 400px;
+}
+
+.card-img img{
+    width: 100%;
+    border-radius: 50%;
+    position: center;
+}
+
+.team-card.card-head{
+    display: flex;
+   text-align: center;
+
+}
+
+.team-title{
+color: rgb(255, 255, 255);
+
+font-size: 1rem;
+font-weight: 600;
+
+}
+.team-sub-title{
+color: rgba(255, 255, 255, 0.5);
+font-size: 1rem;
+font-weight: 400;
+}
+
+
+.run-container{
+ 
+    margin: 0 auto;
+    background-color:#222222 ;
+    border-radius: 18px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.run-card{
+    display: flex;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 50px;
+    gap: 20px;
+    
+}
+
+.run-heading, .run-img{
+ width: 47%;
+ gap: 20px;
+
+}
+
+.run-btn{
+    border: none;
+}
+.run-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.run-img img{
+    width: 100%;
+    border-radius: 18px;
+
+}
+
+@media screen and (max-width: 576px) {
+    .nav-item {
+       
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+    .banner-section{
+        flex-direction: column;
+       
+    }
+    .banner-heading, .banner-img{
+        width: 100%;
+        
+        
+
+    }
+    .banner-img {
+        position: relative; /* Ensure the cards stay inside the image container */
+    }
+
+    .three {
+        position: absolute; /* Use absolute positioning relative to .banner-img */
+        top: 42%;  /* Move the card up */
+        left: 5%; /* Center the card horizontally with some offset */
+        right: auto;
+        margin-bottom: 20px; /* Optional spacing */
+    }
+
+    .three.second-card {
+        position: absolute; /* Ensure both cards align similarly */
+        top: 10%; /* Adjust the vertical position */
+       left: 60%;
+        right: 80%;
+    }
+
+    .habits-heading{
+        width: 100%;
+    }
+
+    .team-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2px;
+    }
+
+    .team-card{
+      
+        text-align: center;
+      
+    }
+
+    .run-card{
+        flex-direction: column;
+    }
+    .run-heading ,.run-img{
+        width: 100%;
+    }
+
+    .run-btn .btn-primary{
+        width: 100%;
+    }
+    
+}
