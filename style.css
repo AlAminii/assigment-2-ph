@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @import url('https://fonts.cdnfonts.com/css/miama');
-/* Reset only for header and main to remove the gap */
+
 *{
     margin: 0;
     padding: 0;
@@ -12,10 +12,10 @@ header, main {
     box-sizing: border-box;
   }
   
-  /* Other specific elements can retain their default or custom padding */
+  
   header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.973), rgba(0, 0, 0, 0.897) 100%);
-    padding: 20px 0; /* Adjust padding inside header to suit your design */
+    padding: 20px 0; 
   }
   
   main {
@@ -23,11 +23,11 @@ header, main {
   }
   
   h1, p, .nav-items, .banner-btn {
-    padding: 10px 20px; /* Add padding back to specific elements that need spacing */
+    padding: 10px 20px; 
   }
   
   header + main {
-    margin-top: 0; /* Remove any potential gap between header and main */
+    margin-top: 0; 
   }
   
 body {
@@ -56,7 +56,7 @@ main{
 
 
 
-/* Navbar styling */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -106,10 +106,10 @@ main{
     color: white;
 }
 
-/* Mobile responsiveness */
 
-/* 
-banner section heare */
+
+
+
 
 .banner-section{
     display: flex;
@@ -118,13 +118,7 @@ banner section heare */
   
 
 }
-/* .banner-heading{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-} */
+
 .banner-section, .banner-btn{
     display: flex;
 }
@@ -203,7 +197,7 @@ font-weight: 400;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     position: absolute;
-    top: 100%;
+    top: 90%;
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
     display: flex;
@@ -251,12 +245,6 @@ font-size: 1rem;
 font-weight: 400;
 
 }
-
-
-/* .habits{
-    background: rgb(185, 185, 185);
-} */
-
 
 
 .habits-heading{
@@ -422,7 +410,7 @@ font-size: 1.14rem;
     width: 100%;
 }
 
-.from-container input, textarea{
+.from-container input, textarea, select{
     border: 1px solid black;
     width: 98%;
     height: 50px;
@@ -431,7 +419,10 @@ font-size: 1.14rem;
 background: rgba(255, 255, 255, 0.1);
 }
 
-input::placeholder, textarea {
+input::placeholder, textarea, select {
+   justify-content: center;
+   align-items: center;
+   text-align: start;
     color: rgba(255, 255, 255, 0.6);
     
     font-size: 1rem;
@@ -450,9 +441,9 @@ input::placeholder, textarea {
   .meet-card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
     border-radius: 18px;
-    border: 2px solid rebeccapurple;
+  
 
 background: rgba(255, 255, 255, 0.1);
 }
@@ -468,12 +459,12 @@ background: rgba(255, 255, 255, 0.1);
 }
 
 .hello{
-    font-weight: 700;
-    font-size: 2rem;
+    font-weight: 400;
+    font-size: 1.5rem;
     color: rgb(255, 255, 255);
     position: absolute;
-    left:10%;
-    top: 60%;
+    left:5%;
+    top: 65%;
    
   
 }
@@ -481,54 +472,50 @@ background: rgba(255, 255, 255, 0.1);
 .sub{
     position: absolute;
     font-weight: 400;
-    left: 20%;
+    left: 5%;
     top: 75%;
 }
 
 
-.meet-img img{
-    border: 2px solid tomato;
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    opacity: 0.6;
-}
 
-.meet-img {
-    display: flex;
-    justify-content: center; /* Center image horizontally */
-    align-items: center; /* Center image vertically */
-    width: 100%;
-    height: 100%;
-}
 
 .meet-img img {
-    max-width: 100%; /* Ensure images are responsive */
-    height: auto;
-    border-radius: 10px; /* Maintain aspect ratio */
-     /* Optional: If you want circular images */
+    opacity: 0.9;
+    width: 100%;
+    height: 400px; 
+    max-width: 400px; 
+    max-height: 400px; 
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+    
+
 }
+
+
 
 .registration-container {
     background-image: url(./images/exercise4.png);
     opacity: 0.9;
-
     margin-top: 20px;
-   
-border-radius: 18px;
+    border-radius: 18px;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 800px;
-    display: flex;              /* Add flex display */
-    flex-direction: column;     /* Align items in a column */
-    justify-content: center;    /* Center items vertically */
-    align-items: center;        /* Center items horizontally */
+    display: flex;             
+    flex-direction: column;     
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;       
 }
 
 .reg-heading {
-    text-align: center;         /* Center text horizontally */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
 
 .reg-title{
     font-weight: 1000px;
@@ -556,10 +543,8 @@ footer{
     padding: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
     gap: 50px;
   align-items: center;
-   
     color: white;
 
     
@@ -625,20 +610,20 @@ font-weight: 400;
 
     }
     .banner-img {
-        position: relative; /* Ensure the cards stay inside the image container */
+        position: relative; 
     }
 
     .three {
-        position: absolute; /* Use absolute positioning relative to .banner-img */
-        top: 42%;  /* Move the card up */
-        left: 5%; /* Center the card horizontally with some offset */
+        position: absolute; 
+        top: 42%;  
+        left: 5%; 
         right: auto;
-        margin-bottom: 20px; /* Optional spacing */
+        margin-bottom: 20px; 
     }
 
     .three.second-card {
-        position: absolute; /* Ensure both cards align similarly */
-        top: 10%; /* Adjust the vertical position */
+        position: absolute;
+        top: 10%; 
        left: 60%;
         right: 80%;
     }
@@ -708,7 +693,7 @@ font-weight: 400;
     }
     .reg-heading {
         text-align: center;
-        padding: 20px; /* Add some padding for better spacing on mobile */
+        padding: 20px; 
     }
    
 }
