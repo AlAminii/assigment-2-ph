@@ -16,7 +16,7 @@ span{
                                                 
 }
 
-.header-section, .habits,  .run-container, .bmi-calculator-container,.bmi-chart-banner, footer {
+.header-section, .habits,  .run-container, .bmi-calculator-container,.bmi-chart-banner,.meet-team-container, footer {
     max-width: 90%;
     margin: 0 auto;
 }
@@ -415,7 +415,74 @@ input::placeholder, textarea {
    
   }
 
+  .meet-team-hading{
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
 
+
+  .meet-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border-radius: 18px;
+    border: 2px solid rebeccapurple;
+
+background: rgba(255, 255, 255, 0.1);
+}
+
+.meet-card {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    min-height: 200px;
+   position: relative;
+    border-radius: 18px; 
+    padding: 0px;
+}
+
+.hello{
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left:10%;
+    top: 60%;
+   
+  
+}
+
+.sub{
+    position: absolute;
+    font-weight: 400;
+    left: 20%;
+    top: 75%;
+}
+
+
+.meet-img img{
+    border: 2px solid tomato;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.meet-img {
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    width: 100%;
+    height: 100%;
+}
+
+.meet-img img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+    border-radius: 10px; /* Maintain aspect ratio */
+     /* Optional: If you want circular images */
+}
 
 
 @media screen and (max-width: 576px) {
@@ -492,5 +559,13 @@ input::placeholder, textarea {
     }
     .bmi-form{
         width: 100%;
+    }
+    .meet-team-hading{
+        max-width: 100%;
+        
+        text-align: center;
+      }
+    .meet-card-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
