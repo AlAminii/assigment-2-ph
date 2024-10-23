@@ -1,7 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @import url('https://fonts.cdnfonts.com/css/miama');
-
+/* Reset only for header and main to remove the gap */
+*{
+    margin: 0;
+    padding: 0;
+}
+header, main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Other specific elements can retain their default or custom padding */
+  header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.973), rgba(0, 0, 0, 0.897) 100%);
+    padding: 20px 0; /* Adjust padding inside header to suit your design */
+  }
+  
+  main {
+    background-color: #000000;
+  }
+  
+  h1, p, .nav-items, .banner-btn {
+    padding: 10px 20px; /* Add padding back to specific elements that need spacing */
+  }
+  
+  header + main {
+    margin-top: 0; /* Remove any potential gap between header and main */
+  }
+  
 body {
     font-family: "Inter", sans-serif;
     max-width: 1350px;
@@ -16,16 +44,16 @@ span{
                                                 
 }
 
-.header-section, .habits,  .run-container, .bmi-calculator-container,.bmi-chart-banner,.meet-team-container, footer {
+.header-section, .habits,  .run-container,.footer-container, .bmi-calculator-container,.bmi-chart-banner,.meet-team-container {
     max-width: 90%;
     margin: 0 auto;
+}header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.973), rgba(0, 0, 0, 0.897) 100%);
 }
 main{
    background-color: #000000;
 }
-header {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.973), rgba(0, 0, 0, 0.897) 100%);
-}
+
 
 
 /* Navbar styling */
@@ -52,6 +80,7 @@ header {
     font-weight: 800;
     font-size: 2rem;
 }
+
 
 .nav-item-1 {
     border-radius: 46px;
@@ -228,12 +257,7 @@ font-weight: 400;
     background: rgb(185, 185, 185);
 } */
 
-.habits-team-section{
- 
-    margin-top: 50px;
-    
 
-}
 
 .habits-heading{
     width: 50%;
@@ -341,7 +365,7 @@ font-weight: 400;
 
 
 .bmi-chart-container{
-
+padding: 30px;
 background-color: #222222;
 
 }
@@ -416,6 +440,7 @@ input::placeholder, textarea {
   }
 
   .meet-team-hading{
+    padding: 20px;
     max-width: 50%;
     margin: 0 auto;
     text-align: center;
@@ -484,6 +509,101 @@ background: rgba(255, 255, 255, 0.1);
      /* Optional: If you want circular images */
 }
 
+.registration-container {
+    background-image: url(./images/exercise4.png);
+    opacity: 0.9;
+
+    margin-top: 20px;
+   
+border-radius: 18px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+    display: flex;              /* Add flex display */
+    flex-direction: column;     /* Align items in a column */
+    justify-content: center;    /* Center items vertically */
+    align-items: center;        /* Center items horizontally */
+}
+
+.reg-heading {
+    text-align: center;         /* Center text horizontally */
+}
+
+.reg-title{
+    font-weight: 1000px;
+    font-size: 4rem;
+ color: rgb(255, 255, 255);
+}
+.reg-sub-title{
+    font-weight: 600;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.reg-btn{
+    margin-top: 80px;
+  
+}
+
+
+footer{
+    
+    background:#1A1A1A;
+}
+
+.footer-container{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    gap: 50px;
+  align-items: center;
+   
+    color: white;
+
+    
+}
+
+
+.nav-1, .nav-2, .nav-3 a{
+    color: rgba(255, 255, 255, 0.5);
+font-size: 23px;
+
+font-weight: 400;
+
+}
+
+.nav-1, .nav-2, .nav-3{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.n-title{
+    color: rgb(255, 255, 255);
+   
+    font-size: 2rem;
+    font-weight: 700;
+   
+}
+.copyright{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.copyright p {
+color: rgba(255, 255, 255, 0.5);
+font-size: 1.25rem;
+font-weight: 400;
+ 
+
+    
+  }
 
 @media screen and (max-width: 576px) {
     .nav-item {
@@ -562,10 +682,33 @@ background: rgba(255, 255, 255, 0.1);
     }
     .meet-team-hading{
         max-width: 100%;
-        
+        margin: 0 auto;
         text-align: center;
       }
     .meet-card-container{
         grid-template-columns: repeat(1, 1fr);
     }
+    .meet-card-container .meet-card .hello{
+        font-size: 1rem;
+        font-weight: 500px;
+        margin-left: 8%;
+    }
+
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .copyright{
+        width: 100%;
+    }
+    .registration-container img{
+        width: 100%;
+        height: auto;
+        
+    }
+    .reg-heading {
+        text-align: center;
+        padding: 20px; /* Add some padding for better spacing on mobile */
+    }
+   
 }
